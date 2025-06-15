@@ -15,16 +15,15 @@ export const Header = () => {
   if (!mounted) return null; // Prevent rendering until mounted
 
   return (
-    <div className="flex justify-center items-center fixed gap-3 top-3">
-      <nav className="flex gap-1 border border-white/15 rounded-full bg-white/10 backdrop-blur">
+    <div className="flex justify-center items-center fixed gap-3 top-3 w-full">
+      <nav className="flex gap-1 border border-white/15 rounded-full dark:bg-slate-800 bg-amber-200 backdrop-blur">
         <a href="#" className="nav-item">Home</a>
         <a href="#" className="nav-item">Projects</a>
         <a href="#" className="nav-item">About</a>
-        <a href="#" className="nav-item bg-white text-gray-800 hover:bg-white/50 hover:text-gray-900">Contact</a>
+        <a href="#" className="nav-item ">Contact</a>
       </nav>
       <button
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        // className="p-1 rounded"
       >
         {theme === "dark" ? 
         (

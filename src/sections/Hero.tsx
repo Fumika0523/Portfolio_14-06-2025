@@ -1,20 +1,43 @@
 import Image from "next/image"
+import Memoji from '@/assets/images/unnamed.png'
+import { FaArrowDown } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+
 
 
 export const HeroSection = () => {
-  return(
-    <div>
+  return (
+    <div className="py-32 md:py-48 ">
       <div className="container">
-        {/* <Image /> */}
-      <div>
-        <div></div>
-        <div>Available for new projects</div>
-       </div>
-       <h1>Building Exceptional User Experience</h1>
-        <p>
-            I specialize in transforming designs into functional, high-performing web application. Let's dicuss your next project.
-        </p>
-       </div> 
+        {/* first part */}
+        <div className="flex flex-col items-center">
+          <Image src={Memoji}
+            alt="Person peeking from behind laptop" className="rounded-full aspect-square object-cover size-[100px]" />
+        {/* second part */}
+          <div className="dark:bg-gray-800
+          bg-amber-300 border dark:border-gray-800 border-gray-400 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+            <div className="bg-green-500 size-3 rounded-full"></div>
+            <div className="text-sm font-medium dark:bg-gray-800">Available for new projects</div>
+          </div>
+        </div>
+        <div className="mx-w-lg mx-auto">
+            <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">Building Exceptional User Experience</h1>
+            <p className="mt-4 text-center dark:text-white/60 text-gray-600 md:text-lg ">
+              I specialize in transforming designs into functional, high-performing web application. Let's dicuss your next project.
+            </p>
+        </div>
+        <div className="flex flex-col md:flex-row items-center justify-center  mt-8 gap-4">
+        <button className="border dark:border-white/15 border-gray-300   justify-center inline-flex items-center gap-2 px-6 h-12 rounded-xl">
+          <span className="font-semibold">Explore My Work</span>
+          <FaArrowDown className="size-4"/>
+        </button>
+        <button className="border dark:border-white/15 border-gray-300  dark:bg-slate-50 dark:text-gray-800 justify-center inline-flex items-center gap-2 px-6 h-12 rounded-xl">
+          <span ><CiMail className="dark:bg-slate-50  size-5" /></span>
+          <span className="font-semibold dark:bg-slate-50 ">Let's Connect</span>
+      </button>
+        </div>
+      </div>
+
     </div>
   )
 };

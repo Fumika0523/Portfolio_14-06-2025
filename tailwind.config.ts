@@ -7,6 +7,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+   darkMode: "class",
   theme: {
     screens: {
       sm: "375px",
@@ -20,7 +21,8 @@ const config: Config = {
         md: "2rem",
       },
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 };

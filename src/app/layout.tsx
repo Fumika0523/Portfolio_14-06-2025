@@ -33,19 +33,19 @@ export default function RootLayout({
 }>) {
   return (
 
-//     - These are font classes generated using next/font/google.
+// - These are font classes generated using next/font/google.
 // - inter.className applies the Inter font.
 // - calistoga.className applies the Calistoga font.
 // - twMerge() ensures both fonts are correctly merged.
 
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
       <body className={twMerge(
         inter.variable,
         calistoga.variable,
         "antialiased font-sans")}>
         <Providers>{children}</Providers>
       </body>
-    </html>
+    </ html>
 
   );
 }
