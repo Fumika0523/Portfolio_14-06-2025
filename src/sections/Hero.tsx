@@ -15,7 +15,7 @@ export const HeroSection = () => {
             alt="Person peeking from behind laptop" className="rounded-full aspect-square object-cover size-[100px]" />
         {/* second part */}
           <div className="dark:bg-gray-800
-          bg-amber-300 border dark:border-gray-800 border-gray-400 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+          bg-amber-300 border dark:border-gray-700 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-3 rounded-full"></div>
             <div className="text-sm font-medium dark:bg-gray-800">Available for new projects</div>
           </div>
