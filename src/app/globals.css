@@ -13,10 +13,12 @@
         @apply bg-amber-400 dark:bg-white/10 dark:text-white text-gray-800;
   }
 
-  *{
+  /* *{
     @apply dark:bg-slate-950
+  } */
+
+  .hero-ring{
+    @apply absolute  bg-transparent inset-0  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5
   }
-
-
 
 }

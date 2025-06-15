@@ -2,13 +2,32 @@ import Image from "next/image"
 import Memoji from '@/assets/images/unnamed.png'
 import { FaArrowDown } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-
-
+import grainImage from "@/assets/images/grain.jpg"
+import { BsStars } from "react-icons/bs";import { StarIcon } from "@heroicons/react/24/solid";
+import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 ">
-      <div className="container">
+    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      <div 
+      className="absolute inset-0 -z-30 opacity-5 "
+      style={{backgroundImage:`url(${grainImage.src})`
+      }}>
+      </div>
+        <div className="size-[620px] hero-ring "></ div>
+        <div className="size-[820px] hero-ring "></ div>
+        <div className="size-[1020px] hero-ring "></ div>
+        <div className="size-[1220px] hero-ring "></ div>
+        <HeroOrbit size={800} rotation={-72}>
+          <BsStars className="size-28 text-amber-300"/>
+        </ HeroOrbit>
+         <HeroOrbit size={550} rotation={20}>
+          <BsStars className="size-12 text-amber-300"/>
+        </ HeroOrbit>
+        <HeroOrbit size={590} rotation={98}>
+          <BsStars className="size-8 text-amber-300"/>
+        </ HeroOrbit>
+        <div className="container">
         {/* first part */}
         <div className="flex flex-col items-center">
           <Image src={Memoji}
@@ -37,7 +56,7 @@ export const HeroSection = () => {
       </button>
         </div>
       </div>
-
     </div>
   )
-};
+}
+
