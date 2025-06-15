@@ -15,7 +15,7 @@ export const Header = () => {
   if (!mounted) return null; // Prevent rendering until mounted
 
   return (
-    <div className="flex justify-center items-center relative gap-3 top-3">
+    <div className="flex justify-center items-center fixed gap-3 top-3">
       <nav className="flex gap-1 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         <a href="#" className="nav-item">Home</a>
         <a href="#" className="nav-item">Projects</a>
